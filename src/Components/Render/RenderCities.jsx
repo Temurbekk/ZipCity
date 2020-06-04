@@ -13,22 +13,24 @@ function RenderCities({ zip }) {
                 {isLoading ? (
                   <div>LOADING</div>
                 ) : (
-                  <div className="container">
-                    <div className="card">
-                      <div className="card-header has-centered-text">
-                        {city.City},{city.State}
-                      </div>
-                      <div className="card-content">
-                        <ul>
-                          <li>State: {city.State}</li>
-                          <li>
-                            Location: ({city.Lat},{city.Long})
-                          </li>
-                          <li>
-                            Population (estimated): {city.EstimatedPopulation}
-                          </li>
-                          <li>Total Wages: {city.TotalWages}</li>
-                        </ul>
+                  <div className="section">
+                    <div className="container">
+                      <div className="card">
+                        <div className="card-header has-centered-text">
+                          {city.City}, {city.State}
+                        </div>
+                        <div className="card-content">
+                          <ul>
+                            <li>State: {city.State}</li>
+                            <li>
+                              Location: ({city.Lat},{city.Long})
+                            </li>
+                            <li>
+                              Population (estimated): {city.EstimatedPopulation}
+                            </li>
+                            <li>Total Wages: {city.TotalWages}</li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
