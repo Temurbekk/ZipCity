@@ -10,16 +10,14 @@ function RenderCities({ zip }) {
           <>
             {isLoading ? (
               <div>LOADING</div>
-            ) : !cities ? (
-              <div>
+            ) : (
+              <div className="container">
                 <div>State: {city.State}</div>
                 <div>City: {city.City}</div>
                 <div>
                   Location: ({city.Lat},{city.Long})
                 </div>
               </div>
-            ) : (
-              <div>Not Found</div>
             )}
           </>
         );
