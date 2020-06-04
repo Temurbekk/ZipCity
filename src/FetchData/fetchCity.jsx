@@ -8,15 +8,9 @@ const fetchCity = (zipCode) => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    axios.get(`${BASE_URL}/${zipCode}`);
-    fetch(url)
-      .then((response) =>
-        response.json().then((data) => {
-          setCities(data);
-          setIsLoading(false);
-        })
-      )
-      .catch((error) => console.log(error));
+    axios.get(`${BASE_URL}/:${zipCode}`).then((response) => {
+      console.log(response);
+    });
   }, [zipCode]);
   return { cities, isLoading };
 };
