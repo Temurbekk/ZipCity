@@ -6,13 +6,13 @@ const NavBar = () => {
   const [menuIsDisplayed, setMenuIsDisplayed] = useState(false);
   return (
     <nav
-      className="navbar has-shadow is-dark"
+      className="navbar has-shadow"
       role="navigation"
       aria-label="main navigation"
     >
       <div className="navbar-brand">
         <Link to="/" className="navbar-item">
-          <h1>ZipCity</h1>
+          <h1 className="title is-size-1">ZipCity</h1>
         </Link>
 
         <div
