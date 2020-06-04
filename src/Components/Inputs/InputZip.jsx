@@ -2,7 +2,7 @@ import React from "react";
 
 const InputZip = ({ setSearch, setSearching }) => {
   const handleChange = (e) => {
-    if (e.target.value === "") {
+    if (e.target.value === "" || e.target.value.toString().length !== 5) {
       setSearching(true);
     } else {
       setSearch(e.target.value);
