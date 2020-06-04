@@ -10,7 +10,7 @@ function RenderCities({ zip }) {
           <>
             {isLoading ? (
               <div>LOADING</div>
-            ) : (
+            ) : !cities ? (
               <div>
                 <div>State: {city.State}</div>
                 <div>City: {city.City}</div>
@@ -18,6 +18,8 @@ function RenderCities({ zip }) {
                   Location: ({city.Lat},{city.Long})
                 </div>
               </div>
+            ) : (
+              <div>Not Found</div>
             )}
           </>
         );
