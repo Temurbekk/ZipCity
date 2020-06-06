@@ -26,9 +26,6 @@ const NavBar = () => {
       </div>
       <div className={`navbar-menu ${menuIsDisplayed ? "is-active" : ""}`}>
         <div className="navbar-end">
-          <Link to="/zip" className="navbar-item">
-            Find Zip
-          </Link>
           <Link to="/city" className="navbar-item">
             Find City
           </Link>
